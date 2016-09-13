@@ -1,3 +1,11 @@
-# Example 
-./sum_args.sh 1 2 3 5 6 9 
+#!/bin/bash
+args=$@
+sum=0
+
+for nums in $args
+ do
+   sum=$(($nums+$sum))
+ done
+
+echo $sum
 
